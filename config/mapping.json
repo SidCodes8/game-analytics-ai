@@ -1,0 +1,58 @@
+{
+  "schema_mappings": {
+    "user_id": ["user_id", "player_id", "uid", "customer_id", "account_id", "User_ID"],
+    "username": ["username", "Username", "player_name", "user_name"],
+    "email": ["email", "Email", "user_email", "player_email"],
+    "signup_date": ["signup_date", "Signup_Date", "registration_date", "created_at", "join_date"],
+    "country": ["country", "Country", "region", "location", "geo"],
+    "age": ["age", "Age", "player_age", "user_age"],
+    "gender": ["gender", "Gender", "sex", "player_gender"],
+    "device_type": ["device_type", "Device_Type", "platform", "device", "os"],
+    "game_title": ["game_title", "Game_Title", "game_name", "title"],
+    "total_play_sessions": ["total_play_sessions", "Total_Play_Sessions", "session_count", "sessions"],
+    "session_duration": ["session_duration", "Session_Duration", "avg_session_time", "play_time"],
+    "total_hours_played": ["total_hours_played", "Total_Hours_Played", "playtime", "hours_played"],
+    "game_purchases": ["game_purchases", "Game_Purchases", "purchase_count", "transactions"],
+    "total_revenue": ["total_revenue", "Total_Revenue_USD", "revenue", "spend", "ltv"],
+    "last_login": ["last_login", "Last_Login", "last_seen", "last_activity"],
+    "subscription_tier": ["subscription_tier", "Subscription_Tier", "tier", "plan"],
+    "referral_source": ["referral_source", "Referral_Source", "source", "channel"],
+    "referred_game_mode": ["referred_game_mode", "Referred_Game_Mode", "game_mode", "mode"],
+    "rank_tier": ["rank_tier", "Rank_Tier", "rank", "level", "tier"],
+    "achievement_score": ["achievement_score", "Achievement_Score", "score", "points"],
+    "event_name": ["event_name", "event_type", "action", "event"],
+    "timestamp": ["timestamp", "event_time", "created_at", "date_time", "time"],
+    "session_id": ["session_id", "session", "visit_id"],
+    "currency_spent": ["currency_spent", "coins_used", "gems_spent", "virtual_currency"]
+  },
+  "event_categories": {
+    "gameplay": ["level_start", "level_complete", "level_fail", "game_start", "game_end", "tutorial_step"],
+    "purchase": ["purchase", "iap", "buy", "transaction", "payment", "spend"],
+    "system": ["login", "logout", "session_start", "session_end", "app_open", "app_close", "error"]
+  },
+  "subscription_tiers": {
+    "Free": 0,
+    "Silver": 1, 
+    "Gold": 2,
+    "Platinum": 3,
+    "Diamond": 4
+  },
+  "rank_tiers": {
+    "Bronze": 1,
+    "Silver": 2,
+    "Gold": 3,
+    "Platinum": 4,
+    "Diamond": 5
+  },
+  "timestamp_formats": [
+    "%d-%b-%Y",
+    "%d %b %Y",
+    "%Y-%m-%d %H:%M:%S",
+    "%d-%m-%Y %H:%M:%S",
+    "%Y/%m/%d %H:%M:%S",
+    "%d/%m/%Y %H:%M:%S",
+    "%Y-%m-%dT%H:%M:%S",
+    "%Y-%m-%d",
+    "%d-%m-%Y"
+  ]
+}
